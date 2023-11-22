@@ -15,16 +15,27 @@ header {
   align-items: center;
   justify-content: center;
 }
-
-header img {
+header .title {
+  width: 100%;
+  text-align: center;
+  height: 50px;
   padding: 14px 89px 13px 89px;
+}
+
+.title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
 }
 
 .location {
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #EAEAEA;
   color: #353535;
   gap: 17px;
+  font-size: 16px;
+  font-weight: 500;
 }/*# sourceMappingURL=home.css.map */
