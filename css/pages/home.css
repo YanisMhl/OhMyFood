@@ -20,5 +20,10 @@ header img {
 }
 
 .location {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  background: #EAEAEA;
+  color: #353535;
+  gap: 17px;
 }/*# sourceMappingURL=home.css.map */
