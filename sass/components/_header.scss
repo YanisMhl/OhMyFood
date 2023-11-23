@@ -1,0 +1,11 @@
+header {
+    @include flex(column);
+    align-items: center;
+    justify-content: center;
+    .title {
+        text-align: center;
+        height: 50px;
+        padding: 14px 89px 13px 89px;
+        font-size: 30px;
+    }
+}

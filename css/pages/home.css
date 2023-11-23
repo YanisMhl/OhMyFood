@@ -9,6 +9,15 @@ html, body {
   height: 100%;
 }
 
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.title {
+  font-family: "Shrikhand", sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -16,15 +25,31 @@ header {
   justify-content: center;
 }
 header .title {
-  width: 100%;
   text-align: center;
   height: 50px;
   padding: 14px 89px 13px 89px;
   font-size: 30px;
 }
 
-.title {
-  font-family: "Shrikhand", sans-serif;
+footer {
+  background: #353535;
+  color: #fff;
+  padding: 30px;
+}
+footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .location {
@@ -159,25 +184,4 @@ header .title {
 .restaurant p {
   font-size: 17px;
   font-weight: 300;
-}
-
-footer {
-  background: #353535;
-  color: #fff;
-  padding: 30px;
-}
-footer h2 {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-footer ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-footer a {
-  text-decoration: none;
-  color: #fff;
 }/*# sourceMappingURL=home.css.map */
