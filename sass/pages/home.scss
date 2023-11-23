@@ -73,3 +73,48 @@ header {
         margin-bottom: 20px;
     }
 }
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.step {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: left;
+    background: $bg-color;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
+    color: $text-color;
+    padding: 20px;
+    position: relative;
+    h3 {
+        position: absolute;
+        left: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: $btn-color;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 50%;
+    }
+    p {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    i {
+        color: #7E7E7E;
+        width: 15px;
+        height: 20px;
+    }
+}
