@@ -1,6 +1,7 @@
 .restaurant {
     display: flex;
     flex-direction: column;
+    position: relative;
     background: #fff;
     border-radius: 15px;
     height: 230px;
@@ -25,8 +26,9 @@
         font-weight: 700;
     }
 
-    p {
+    .card-txt p {
         font-size: 17px;
         font-weight: 300;
     }
 }
+
