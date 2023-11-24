@@ -13,7 +13,7 @@
 
 
 
-.location {
+.location-form {
     width: 100%;
     height: 50px;
     display: flex;
@@ -22,8 +22,27 @@
     background: $second-bg-color;
     color: $text-color;
     gap: 17px;
-    font-size: 16px;
-    font-weight: 500;
+    input {
+        border: none;
+        background: inherit;
+    }
+    input:focus {
+        outline: none;
+    }
+    input[type="text"] {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.location {
+    margin-left: 60px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .explore {
