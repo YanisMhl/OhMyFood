@@ -50,4 +50,31 @@ footer ul {
 footer a {
   text-decoration: none;
   color: #fff;
+}
+
+main {
+  background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.restaurant-container {
+  background: #F6F6F6;
+  border-radius: 20px;
+  padding: 20px;
+  height: 70%;
+}
+
+.restaurant-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.restaurant-title h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
 }/*# sourceMappingURL=restaurant.css.map */
