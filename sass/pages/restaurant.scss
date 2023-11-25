@@ -8,11 +8,9 @@
 
 @import "../components/menu-card";
 
-
 main {
     background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -23,8 +21,9 @@ main {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 20px;
-    min-height: 70%;
 }
+
+
 
 .restaurant-title {
     display: flex;
