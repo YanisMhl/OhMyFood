@@ -3,8 +3,9 @@
 @import "../utils/global";
 @import "../components/header";
 @import "../components/footer";
-
+@import "../components/main-btn";
 @import "../components/menu-title";
+
 @import "../components/menu-card";
 
 
@@ -19,15 +20,17 @@ main {
 
 .restaurant-container {
     background: $bg-color;
-    border-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     padding: 20px;
-    height: 70%;
+    min-height: 70%;
 }
 
 .restaurant-title {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 40px;
+    margin-bottom: 30px;
     h2 {
         font-family: "Shrikhand", sans-serif;
         font-size: 28px;

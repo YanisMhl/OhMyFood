@@ -52,6 +52,37 @@ footer a {
   color: #fff;
 }
 
+.main-btn {
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(193deg, #9356DC, #FF79DA);
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.menu-title {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.menu-title h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu-title .menu-stroke {
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+}
+
 main {
   background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: 100%;
@@ -63,15 +94,17 @@ main {
 
 .restaurant-container {
   background: #F6F6F6;
-  border-radius: 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   padding: 20px;
-  height: 70%;
+  min-height: 70%;
 }
 
 .restaurant-title {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 40px;
+  margin-bottom: 30px;
 }
 .restaurant-title h2 {
   font-family: "Shrikhand", sans-serif;
