@@ -94,9 +94,20 @@ footer a {
 .menu-content {
   flex: 1;
 }
+.menu-content h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu-content p {
+  font-size: 15px;
+  font-weight: 300;
+}
 
 .menu-price {
   align-self: flex-end;
+  font-size: 15px;
+  font-weight: 700;
+  color: #353535;
 }
 
 main {
