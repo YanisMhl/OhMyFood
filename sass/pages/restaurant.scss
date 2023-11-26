@@ -5,8 +5,8 @@
 @import "../components/footer";
 @import "../components/main-btn";
 @import "../components/menu-title";
-
 @import "../components/menu-card";
+
 
 main {
     background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -21,6 +21,13 @@ main {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24.5vh;
+    button {
+        align-self: center;
+        margin-top: 40px;
+    }
 }
 
 
@@ -29,7 +36,6 @@ main {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 30px;
     h2 {
         font-family: "Shrikhand", sans-serif;
         font-size: 28px;
