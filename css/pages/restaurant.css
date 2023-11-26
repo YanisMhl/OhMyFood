@@ -90,6 +90,10 @@ footer a {
   display: flex;
 }
 
+.menu-content {
+  flex: 1;
+}
+
 main {
   background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: 100%;
