@@ -83,6 +83,13 @@ footer a {
   background: #99E2D0;
 }
 
+.menu-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+}
+
 main {
   background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: 100%;
@@ -108,4 +115,10 @@ main {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }/*# sourceMappingURL=restaurant.css.map */
