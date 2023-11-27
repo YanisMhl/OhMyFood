@@ -24,11 +24,26 @@ header {
   align-items: center;
   justify-content: center;
 }
+header.header-restaurant {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+header.header-restaurant .title {
+  padding-left: 0;
+}
 header .title {
   text-align: center;
   height: 50px;
-  padding: 14px 89px 13px 89px;
+  padding: 14px 89px 5px 89px;
   font-size: 30px;
+  font-weight: 400;
+  flex: 1;
+}
+header i {
+  color: #353535;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 footer {
@@ -70,7 +85,7 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 .menu-title h3 {
@@ -85,13 +100,16 @@ footer a {
 
 .menu-card {
   background: #fff;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
   display: flex;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   flex: 1;
 }
 .menu-content h4 {

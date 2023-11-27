@@ -1,11 +1,26 @@
 header {
     @include flex(column);
+    &.header-restaurant
+    {
+        @include flex(row);
+        gap: 50px;
+        .title {
+            padding-left: 0;
+        }
+    }
     align-items: center;
     justify-content: center;
     .title {
         text-align: center;
         height: 50px;
-        padding: 14px 89px 13px 89px;
+        padding: 14px 89px 5px 89px;
         font-size: 30px;
+        font-weight: 400;
+        flex: 1;
+    }
+    i {
+        color: $text-color;
+        margin-left: 20px;
+        cursor: pointer;
     }
 }

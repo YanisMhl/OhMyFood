@@ -24,11 +24,26 @@ header {
   align-items: center;
   justify-content: center;
 }
+header.header-restaurant {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+header.header-restaurant .title {
+  padding-left: 0;
+}
 header .title {
   text-align: center;
   height: 50px;
-  padding: 14px 89px 13px 89px;
+  padding: 14px 89px 5px 89px;
   font-size: 30px;
+  font-weight: 400;
+  flex: 1;
+}
+header i {
+  color: #353535;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 footer {
