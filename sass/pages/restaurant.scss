@@ -9,24 +9,39 @@
 
 
 main {
-    background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    @include global-desktop {
+        max-width: none;
+    }
+}
+
+.bg-img {
+    width: 100%;
+    @include global-desktop {
+        height: 600px;
+        object-fit: cover;
+    }
 }
 
 .restaurant-container {
+    position: relative;
+    bottom: 50px;
+    margin-bottom: -50px;
     background: $bg-color;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 24.5vh;
     button {
         align-self: center;
         margin-top: 40px;
+    }
+    @include global-desktop {
+        width: 65%;
+        align-self: center;
     }
 }
 
@@ -41,10 +56,18 @@ main {
         font-size: 28px;
         font-weight: 400;
     }
+    @include global-desktop {
+        justify-content: center;
+        margin-top: 50px;
+    }
 }
 
 .menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @include global-desktop {
+        width: 60%;
+        align-self: center;
+    }
 }

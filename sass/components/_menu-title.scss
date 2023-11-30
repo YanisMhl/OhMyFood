@@ -13,4 +13,8 @@
         height: 3px;
         background: $new-bg;
     }
+    @include global-desktop {
+        margin-bottom: 0;
+        margin-top: 60px;
+    }
 }

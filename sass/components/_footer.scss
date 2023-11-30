@@ -16,4 +16,19 @@ footer {
         text-decoration: none;
         color: $color-light;
     }
+
+    @include footer-row {
+        padding: 30px 25px; 
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 100px;
+        ul {
+            flex-direction: row;
+            gap: 15px;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+    }
 }
