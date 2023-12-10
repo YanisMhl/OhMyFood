@@ -1,5 +1,5 @@
 .restaurant {
-    display: flex;
+    display: flex; //mixin
     flex-direction: column;
     position: relative;
     background: #fff;
@@ -14,7 +14,7 @@
     }
 
     .card-content {
-        display: flex;
+        display: flex; //mixin
         justify-content: space-between;
         align-items: center;
         flex: 1;

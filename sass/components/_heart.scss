@@ -1,0 +1,16 @@
+.hearts {
+    .fa-solid {
+        display: none; //autre chose que display none
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    &:hover {
+        .fa-regular {
+            display: none;
+        }
+        .fa-solid {
+            display: block;
+            opacity: 1;
+        }
+    }
+}

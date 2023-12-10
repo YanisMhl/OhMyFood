@@ -5,14 +5,14 @@
     text-align: left;
     background: $bg-color;
     border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); //mettre en variable
     color: $text-color;
     padding: 30px 15px;
     position: relative;
     h3 {
         position: absolute;
         left: -15px;
-        display: flex;
+        display: flex; //mixin
         justify-content: center;
         align-items: center;
         color: #fff;
@@ -29,7 +29,7 @@
         font-weight: 500;
     }
     i {
-        color: #7E7E7E;
+        color: #7E7E7E; //mettre variable
         width: 15px;
         height: 20px;
     }
