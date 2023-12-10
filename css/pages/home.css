@@ -95,7 +95,7 @@ footer a {
   padding: 30px 15px;
   position: relative;
 }
-.step h3 {
+.step span {
   position: absolute;
   left: -15px;
   display: flex;
