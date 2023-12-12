@@ -132,6 +132,52 @@ footer a {
   justify-content: space-between;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
+.menu-card .menu-content {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu-card .check {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  align-items: center;
+  transform: translateX(100%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #99E2D0;
+  transition: transform 0.5s ease, opacity 0.1s ease;
+}
+.menu-card .check i {
+  color: #fff;
+}
+.menu-card .menu-price {
+  position: absolute;
+  align-self: flex-end;
+  left: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  color: #353535;
+  transition: transform 0.5s ease;
+}
+.menu-card:hover {
+  cursor: pointer;
+}
+.menu-card:hover .check {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+.menu-card:hover .menu-price {
+  transform: translateX(-110%);
+}
 
 .menu-text {
   display: flex;
@@ -146,36 +192,6 @@ footer a {
 .menu-text p {
   font-size: 15px;
   font-weight: 300;
-}
-
-.menu-content {
-  padding: 10px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.menu-price {
-  align-self: flex-end;
-  font-size: 15px;
-  font-weight: 700;
-  color: #353535;
-}
-
-.check {
-  display: flex;
-  align-items: center;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-left: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #99E2D0;
-}
-.check i {
-  color: #fff;
 }
 
 main {
