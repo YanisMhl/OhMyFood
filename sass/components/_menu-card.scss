@@ -5,7 +5,7 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);  //variable
 }
 //nesting
-.menu-content {
+.menu-text {
     @include flex(column);
     gap: 5px;
     flex: 1;
@@ -27,6 +27,17 @@
 }
 
 .check {
-
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $new-bg;
+    i {
+        color: #fff;
+    }
 }
