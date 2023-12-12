@@ -1,10 +1,11 @@
 .menu-card {
+    position: relative;
     background: #fff;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);  //variable
-
+    z-index: 10;
     .menu-content {
         padding: 10px;
         position: relative;
@@ -13,12 +14,19 @@
         justify-content: space-between;
     }
 
+    .animation {
+        position: absolute;
+        left: 99%;
+        width: 90px;
+        height: 70px;
+        background-color: green;
+        z-index: 2;
+    }
+
     .check {
         display: flex;
-        opacity: 0;
-        visibility: hidden;
         align-items: center;
-        transform: translateX(100%);
+        transform: translateX(120%);
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         margin-left: 5px;
@@ -27,7 +35,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
         background-color: $new-bg;
-
+        z-index: 1;
         transition: transform 0.5s ease, opacity 0.1s ease;
         i {
             color: #fff;
@@ -49,7 +57,6 @@
         .check {
             opacity: 1;
             transform: translateX(0);
-            visibility: visible;
         }
 
         .menu-price {
