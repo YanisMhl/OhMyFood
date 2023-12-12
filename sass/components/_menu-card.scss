@@ -2,6 +2,7 @@
     background: #fff;
     border-radius: 15px;
     display: flex;
+    justify-content: space-between;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);  //variable
 }
 //nesting
@@ -19,6 +20,13 @@
     }
 }
 
+.menu-content {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .menu-price {
     align-self: flex-end;
     font-size: 15px;
@@ -31,7 +39,7 @@
     align-items: center;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin-left: 20px;
+    margin-left: 5px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 30px;
