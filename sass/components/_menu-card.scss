@@ -5,22 +5,13 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);  //variable
-    z-index: 3;
+    z-index: 1;
     .menu-content {
         padding: 10px;
         position: relative;
         display: flex;
         width: 100%;
         justify-content: space-between;
-    }
-
-    .animation {
-        position: absolute;
-        left: 99%;
-        width: 90px;
-        height: 70px;
-        background-color: green;
-        z-index: 2;
     }
 
     .check {
@@ -35,7 +26,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
         background-color: $new-bg;
-        z-index: 1;
+        z-index: 3;
         transition: transform 0.5s ease, opacity 0.1s ease;
         i {
             color: #fff;
@@ -77,4 +68,27 @@
         font-size: 15px;
         font-weight: 300;
     }
+}
+
+// .anim1 {
+//     position: absolute;
+//     left: 78%;
+//     top: 17%;
+//     width: 20px;
+//     height: 67px;
+//     background: #fff;
+//     border-top-right-radius: 15px;
+//     border-bottom-right-radius: 15px;
+//     // box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);  
+//     z-index: 5;
+// }
+
+.anim2 {
+    position: absolute;
+    left: 78%;
+    top: 17%;
+    width: 90px;
+    height: 70px;
+    background-color: green;
+    z-index: 2;
 }
