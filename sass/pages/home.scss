@@ -51,31 +51,31 @@
     }
 }
 
-body {
+// body {
 
-    .loading-screen {
-        position: absolute;
-        right: 35%;
-        top: 45%;
-        display: flex;
-        gap: 50px;
-        @for $i from 1 through 8 {
-            i:nth-child(#{$i}) {
-                animation: upAndDown 2s ease;
-                color: nth($rainbow-colors, $i);
-            }
-        }
-        animation: loading-before 3s ease forwards;
-    }
-    .main-container {
-        animation: loading-after 6s ease;
-    }
-    &:has(div) {
-        .main-container {
-            opacity: 100%;
-        }
-    }
-}
+//     .loading-screen {
+//         position: absolute;
+//         right: 35%;
+//         top: 45%;
+//         display: flex;
+//         gap: 50px;
+//         @for $i from 1 through 8 {
+//             i:nth-child(#{$i}) {
+//                 animation: upAndDown 2s ease;
+//                 color: nth($rainbow-colors, $i);
+//             }
+//         }
+//         animation: loading-before 3s ease forwards;
+//     }
+//     .main-container {
+//         animation: loading-after 6s ease;
+//     }
+//     &:has(div) {
+//         .main-container {
+//             opacity: 100%;
+//         }
+//     }
+// }
 
 
 
