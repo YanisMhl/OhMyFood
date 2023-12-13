@@ -1,4 +1,15 @@
+@keyframes sliding {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .menu-card {
+    animation: sliding 1.5s ease;
     position: relative;
     background: #fff;
     border-radius: 15px;
@@ -69,19 +80,6 @@
         font-weight: 300;
     }
 }
-
-// .anim1 {
-//     position: absolute;
-//     left: 78%;
-//     top: 17%;
-//     width: 20px;
-//     height: 67px;
-//     background: #fff;
-//     border-top-right-radius: 15px;
-//     border-bottom-right-radius: 15px;
-//     // box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);  
-//     z-index: 5;
-// }
 
 .anim2 {
     position: absolute;

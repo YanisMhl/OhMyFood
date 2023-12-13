@@ -125,7 +125,16 @@ footer a {
   }
 }
 
+@keyframes sliding {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .menu-card {
+  animation: sliding 1.5s ease;
   position: relative;
   background: #fff;
   border-radius: 15px;
