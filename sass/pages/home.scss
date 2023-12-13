@@ -9,6 +9,49 @@
 @import "../components/new";
 @import "../components/restaurant-card";
 
+@keyframes moveInCircle {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+
+    .loading-screen {
+        position: absolute;
+        right: 45%;
+        top: 50%;
+        // display: flex;
+        // gap: 25px;
+        width: 0;
+        height: 0;
+        $circle-radius: 120px;
+        $offset: 0deg;
+        // animation: moveInCircle 6s linear infinite;
+        @for $i from 1 through 7 {
+            $angle: 45deg * $i;
+            $x: $circle-radius * cos($angle + $offset);
+            $y: $circle-radius * sin($angle + $offset);
+            i:nth-child(#{$i}) {
+                transform: translate($x, $y);
+                $x: $x + 20;
+                $y: $y + 20;
+                color: nth($rainbow-colors, $i);
+            }
+        }
+    }
+    .main-container {
+        opacity: 0;
+        transition: all 3s ease;
+    }
+    &:has(div) {
+        .main-container {
+            opacity: 100%;
+        }
+    }
+}
+
+
 
 .location-form {
     width: 100%;
