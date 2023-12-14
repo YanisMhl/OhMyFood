@@ -9,6 +9,10 @@
 @import "../components/new";
 @import "../components/restaurant-card";
 
+$animation-duration: 1s;
+$logo-duration: 0s;
+$logo-gap: 0.1s; 
+
 @keyframes loading-before {
     0% {
         opacity: 100%;
@@ -38,12 +42,15 @@
 }
 
 @keyframes upAndDown {
-    33% {
-        transform: translateY(-80%);
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-120%);
     }
 
     66% {
-        transform: translateY(80%);
+        transform: translateY(120%);
     }
 
     100% {
@@ -51,31 +58,37 @@
     }
 }
 
-// body {
+body {
 
-//     .loading-screen {
-//         position: absolute;
-//         right: 35%;
-//         top: 45%;
-//         display: flex;
-//         gap: 50px;
-//         @for $i from 1 through 8 {
-//             i:nth-child(#{$i}) {
-//                 animation: upAndDown 2s ease;
-//                 color: nth($rainbow-colors, $i);
-//             }
-//         }
-//         animation: loading-before 3s ease forwards;
-//     }
-//     .main-container {
-//         animation: loading-after 6s ease;
-//     }
-//     &:has(div) {
-//         .main-container {
-//             opacity: 100%;
-//         }
-//     }
-// }
+    .loading-screen {
+        position: absolute;
+        right: 35%;
+        top: 45%;
+        display: flex;
+        gap: 50px;
+        @for $i from 1 through 8 {
+            $delay: ($i - 1) * ($logo-duration + $logo-gap); // Calculer le décalage
+            i:nth-child(#{$i}) {
+                animation: upAndDown $animation-duration ease $delay;
+                animation-delay: $delay;
+                color: nth($rainbow-colors, $i);
+            }
+        }
+        animation: loading-before 3s ease forwards;
+    }
+    .main-container {
+        animation: loading-after 6s ease forwards;
+    }
+    &:has(div) {
+        .main-container {
+            opacity: 100%;
+        }
+    }
+
+    .main-container {
+        opacity: 0;
+    }
+}
 
 
 
