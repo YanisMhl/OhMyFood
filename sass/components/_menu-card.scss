@@ -23,46 +23,59 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+
+        .menu-text {
+            width: calc(100% - 40px);
+        }
+        .menu-text * {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .menu-price {
+            // position: absolute;
+            align-self: flex-end;
+            left: 100%;
+            font-size: 15px;
+            font-weight: 700;
+            color: $text-color;
+            width: 40px;
+        }
+    
     }
 
     .check {
         display: flex;
         align-items: center;
-        transform: translateX(120%);
+        justify-content: center;
+        // transform: translateX(120%);
+        width: 0;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         margin-left: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 30px;
-        padding-bottom: 30px;
         background-color: $new-bg;
         z-index: 3;
-        transition: transform 0.5s ease, opacity 0.1s ease;
+        transition: width 0.5s ease;
         i {
             color: #fff;
+            opacity: 0;
+            transition: opacity 0.2s ease;
         }
     }
 
-    .menu-price {
-        position: absolute;
-        align-self: flex-end;
-        left: 100%;
-        font-size: 15px;
-        font-weight: 700;
-        color: $text-color;
-        transition: transform 0.5s ease;
-    }
 
     &:hover {
         cursor: pointer;
         .check {
-            opacity: 1;
-            transform: translateX(0);
+            width: 60px;
+            i {
+                opacity: 1;
+            }
         }
 
-        .menu-price {
-            transform: translateX(-110%);
+        .menu-text {
+            width: calc(100% - 100px);
         }
     }
 }
@@ -79,14 +92,4 @@
         font-size: 15px;
         font-weight: 300;
     }
-}
-
-.anim2 {
-    position: absolute;
-    left: 78%;
-    top: 17%;
-    width: 90px;
-    height: 70px;
-    background-color: green;
-    z-index: 2;
 }

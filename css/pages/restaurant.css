@@ -150,42 +150,50 @@ footer a {
   width: 100%;
   justify-content: space-between;
 }
-.menu-card .check {
-  display: flex;
-  align-items: center;
-  transform: translateX(120%);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-left: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #99E2D0;
-  z-index: 3;
-  transition: transform 0.5s ease, opacity 0.1s ease;
+.menu-card .menu-content .menu-text {
+  width: calc(100% - 40px);
 }
-.menu-card .check i {
-  color: #fff;
+.menu-card .menu-content .menu-text * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu-card .menu-price {
-  position: absolute;
+.menu-card .menu-content .menu-price {
   align-self: flex-end;
   left: 100%;
   font-size: 15px;
   font-weight: 700;
   color: #353535;
-  transition: transform 0.5s ease;
+  width: 40px;
+}
+.menu-card .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left: 5px;
+  background-color: #99E2D0;
+  z-index: 3;
+  transition: width 0.5s ease;
+}
+.menu-card .check i {
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 .menu-card:hover {
   cursor: pointer;
 }
 .menu-card:hover .check {
-  opacity: 1;
-  transform: translateX(0);
+  width: 60px;
 }
-.menu-card:hover .menu-price {
-  transform: translateX(-110%);
+.menu-card:hover .check i {
+  opacity: 1;
+}
+.menu-card:hover .menu-text {
+  width: calc(100% - 100px);
 }
 
 .menu-text {
@@ -201,16 +209,6 @@ footer a {
 .menu-text p {
   font-size: 15px;
   font-weight: 300;
-}
-
-.anim2 {
-  position: absolute;
-  left: 78%;
-  top: 17%;
-  width: 90px;
-  height: 70px;
-  background-color: green;
-  z-index: 2;
 }
 
 main {

@@ -46,11 +46,11 @@ $logo-gap: 0.1s;
         transform: translateY(0);
     }
     25% {
-        transform: translateY(-120%);
+        transform: translateY(-100%);
     }
 
     66% {
-        transform: translateY(120%);
+        transform: translateY(100%);
     }
 
     100% {
@@ -59,13 +59,21 @@ $logo-gap: 0.1s;
 }
 
 body {
-
+    display: flex;
+    flex-direction: column;
     .loading-screen {
         position: absolute;
-        right: 35%;
-        top: 45%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        align-self: center;
+        justify-self: center;
         gap: 50px;
+        @include global-desktop {
+            flex-direction: row;
+        }
         @for $i from 1 through 8 {
             $delay: ($i - 1) * ($logo-duration + $logo-gap); // Calculer le décalage
             i:nth-child(#{$i}) {
