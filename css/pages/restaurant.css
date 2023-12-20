@@ -133,8 +133,23 @@ footer a {
     transform: translateX(0);
   }
 }
+.menu:nth-child(1) .menu-card {
+  animation: sliding 1 ease 0.8s;
+}
+
+.menu:nth-child(2) .menu-card {
+  animation: sliding 1 ease 1.6s;
+}
+
+.menu:nth-child(3) .menu-card {
+  animation: sliding 1 ease 2.4s;
+}
+
+.menu:nth-child(4) .menu-card {
+  animation: sliding 1 ease 3.2s;
+}
+
 .menu-card {
-  animation: sliding 1.5s ease;
   position: relative;
   background: #fff;
   border-radius: 15px;

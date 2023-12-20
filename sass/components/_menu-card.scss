@@ -8,8 +8,16 @@
     }
 }
 
+$menu-card-delay: 0.8s;
+
+@for $i from 1 through 4 {
+    .menu:nth-child(#{$i}) .menu-card {
+        animation: sliding 1 ease #{$menu-card-delay * $i};
+    }
+}
+
 .menu-card {
-    animation: sliding 1.5s ease;
+    // animation: sliding 1.5s ease;
     position: relative;
     background: #fff;
     border-radius: 15px;
