@@ -3,32 +3,6 @@
     flex-direction: $flex-direction;
 }
 
-@mixin fonctionnement-row {
-    @media screen and (min-width: 1024px) {
-        @content;
-    }
-}
-
-@mixin full-header {
-    @media screen and (min-width: 1024px) {
-        @content;
-    }
-}
-
-@mixin restaurant-grid {
-    @media screen and (min-width: 1024px)
-    {
-        @content;
-    }
-}
-
-@mixin footer-row {
-    @media screen and (min-width: 1024px)
-    {
-        @content;
-    }
-}
-
 @mixin global-desktop {
     @media screen and (min-width: 1024px) //variable (breakpoint)
     {

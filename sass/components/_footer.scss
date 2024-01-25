@@ -17,7 +17,7 @@ footer {
         color: $color-light;
     }
 
-    @include footer-row {
+    @include global-desktop {
         padding: 30px 25px; 
         display: flex;
         flex-direction: row-reverse;
