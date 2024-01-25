@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 @keyframes sliding {
     0% {
         transform: translateX(-100%);
@@ -71,9 +73,7 @@ $menu-card-delay: 0.8s;
             transition: opacity 0.2s ease;
         }
     }
-
-
-    &:hover {
+    &:active {
         cursor: pointer;
         .check {
             width: 60px;
@@ -84,6 +84,21 @@ $menu-card-delay: 0.8s;
 
         .menu-text {
             width: calc(100% - 100px);
+        }
+    }
+    @include global-desktop {
+        &:hover {
+            cursor: pointer;
+            .check {
+                width: 60px;
+                i {
+                    opacity: 1;
+                }
+            }
+
+            .menu-text {
+                width: calc(100% - 100px);
+            }
         }
     }
 }

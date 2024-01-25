@@ -233,17 +233,31 @@ footer a {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-.menu-card:hover {
+.menu-card:active {
   cursor: pointer;
 }
-.menu-card:hover .check {
+.menu-card:active .check {
   width: 60px;
 }
-.menu-card:hover .check i {
+.menu-card:active .check i {
   opacity: 1;
 }
-.menu-card:hover .menu-text {
+.menu-card:active .menu-text {
   width: calc(100% - 100px);
+}
+@media screen and (min-width: 1024px) {
+  .menu-card:hover {
+    cursor: pointer;
+  }
+  .menu-card:hover .check {
+    width: 60px;
+  }
+  .menu-card:hover .check i {
+    opacity: 1;
+  }
+  .menu-card:hover .menu-text {
+    width: calc(100% - 100px);
+  }
 }
 
 .menu-text {
