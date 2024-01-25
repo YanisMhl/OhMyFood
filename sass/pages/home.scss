@@ -59,12 +59,10 @@ $logo-gap: 0.1s;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     .loading-screen {
         position: absolute;
-        display: flex;
-        flex-direction: column;
+        @include flex(column);
         align-items: center;
         justify-content: center;
         height: 80%;
@@ -133,8 +131,7 @@ body {
 }
 
 .explore {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -153,8 +150,7 @@ body {
 }
 
 .fonctionnement {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     gap: 20px;
     padding: 20px;
     padding-bottom: 50px;
@@ -173,8 +169,7 @@ body {
 }
 
 .restaurants {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     background: $bg-color;
     padding: 30px;
     gap: 30px;

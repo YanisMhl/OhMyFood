@@ -1,6 +1,7 @@
+@import "../utils/mixins";
+
 .menu-title {
-    display: flex; //mixin
-    flex-direction: column;
+    @include flex(column);
     gap: 3px;
     margin-top: 30px;
     margin-bottom: 15px;

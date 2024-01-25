@@ -1,6 +1,7 @@
+@import "../utils/mixins";
+
 .restaurant {
-    display: flex; //mixin
-    flex-direction: column;
+    @include flex(column);
     position: relative;
     background: #fff;
     border-radius: 15px;
