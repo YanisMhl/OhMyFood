@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 .hearts {
     position: relative;
 
@@ -9,13 +11,25 @@
         opacity: 0;
         transition: opacity 0.5s ease;
     }
-    &:hover {
+    &:active {
         cursor: pointer;
         .fa-regular {
             opacity: 0;
         }
         .fa-solid {
             opacity: 1;
+        }
+    }
+
+    @include global-desktop {
+        &:hover {
+            cursor: pointer;
+            .fa-regular {
+                opacity: 0;
+            }
+            .fa-solid {
+                opacity: 1;
+            }
         }
     }
 

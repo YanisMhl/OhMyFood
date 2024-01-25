@@ -131,14 +131,25 @@ footer a {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.hearts:hover {
+.hearts:active {
   cursor: pointer;
 }
-.hearts:hover .fa-regular {
+.hearts:active .fa-regular {
   opacity: 0;
 }
-.hearts:hover .fa-solid {
+.hearts:active .fa-solid {
   opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  .hearts:hover {
+    cursor: pointer;
+  }
+  .hearts:hover .fa-regular {
+    opacity: 0;
+  }
+  .hearts:hover .fa-solid {
+    opacity: 1;
+  }
 }
 .hearts .fa-lg {
   top: 9px;
