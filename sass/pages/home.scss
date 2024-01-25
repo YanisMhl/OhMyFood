@@ -87,7 +87,7 @@ body {
     .main-container {
         animation: loading-after 6s ease forwards;
     }
-    &:has(div) {
+    &:has(+ div) {
         .main-container {
             opacity: 100%;
         }

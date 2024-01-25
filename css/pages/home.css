@@ -326,7 +326,7 @@ body .loading-screen i:nth-child(8) {
 body .main-container {
   animation: loading-after 6s ease forwards;
 }
-body:has(div) .main-container {
+body:has(+ div) .main-container {
   opacity: 100%;
 }
 body .main-container {
