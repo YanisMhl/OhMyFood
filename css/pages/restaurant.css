@@ -125,22 +125,28 @@ footer a {
   }
 }
 
+.hearts {
+  position: relative;
+}
 .hearts .fa-solid {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #9356DC;
   opacity: 0;
-  transition: all 0.5s;
+  transition: opacity 0.5s ease;
 }
 .hearts:hover {
   cursor: pointer;
 }
 .hearts:hover .fa-regular {
-  display: none;
   opacity: 0;
 }
 .hearts:hover .fa-solid {
-  display: block;
   opacity: 1;
-  color: #9356DC;
+}
+.hearts .fa-lg {
+  top: 9px;
 }
 
 @keyframes sliding {
