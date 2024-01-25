@@ -5,6 +5,7 @@
         transition: all 0.5s;
     }
     &:hover {
+        cursor: pointer;
         .fa-regular {
             display: none;
             opacity: 0;
