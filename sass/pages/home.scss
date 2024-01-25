@@ -152,8 +152,7 @@ body {
 .fonctionnement {
     @include flex(column);
     gap: 20px;
-    padding: 20px;
-    padding-bottom: 50px;
+    padding: 20px 20px 50px 20px;
     @include global-desktop {
         padding: 50px 180px;
         display: grid;
@@ -162,8 +161,7 @@ body {
             grid-column: span 3;
         }
         .step {
-            margin-top: 25px;
-            margin-right: 24px;
+            margin: 25px 24px 0 0;
         }
     }
 }

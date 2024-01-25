@@ -389,8 +389,7 @@ body .main-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
-  padding-bottom: 50px;
+  padding: 20px 20px 50px 20px;
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
@@ -402,8 +401,7 @@ body .main-container {
     grid-column: span 3;
   }
   .fonctionnement .step {
-    margin-top: 25px;
-    margin-right: 24px;
+    margin: 25px 24px 0 0;
   }
 }
 
