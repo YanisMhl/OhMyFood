@@ -116,32 +116,25 @@ footer a {
   position: absolute;
   top: 0;
   left: 0;
-  color: #9356DC;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.hearts:active {
+.hearts:hover {
   cursor: pointer;
 }
-.hearts:active .fa-regular {
+.hearts:hover .fa-regular {
   opacity: 0;
 }
-.hearts:active .fa-solid {
+.hearts:hover .fa-solid {
   opacity: 1;
-}
-@media screen and (min-width: 1024px) {
-  .hearts:hover {
-    cursor: pointer;
-  }
-  .hearts:hover .fa-regular {
-    opacity: 0;
-  }
-  .hearts:hover .fa-solid {
-    opacity: 1;
-  }
+  line-height: normal;
 }
 .hearts .fa-lg {
-  top: 9px;
+  line-height: 0;
 }
 
 .main-btn {
