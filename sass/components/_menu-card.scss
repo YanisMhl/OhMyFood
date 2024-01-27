@@ -21,6 +21,7 @@ $menu-card-delay: 0.8s;
 .menu-card {
     // animation: sliding 1.5s ease;
     position: relative;
+    overflow: hidden;
     background: #fff;
     border-radius: 15px;
     display: flex;
@@ -31,11 +32,23 @@ $menu-card-delay: 0.8s;
         padding: 10px;
         position: relative;
         display: flex;
+        flex: 1 0 auto;
+        transition: flex 0.5s ease;
         width: 100%;
         justify-content: space-between;
 
         .menu-text {
-            width: calc(100% - 40px);
+            @include flex(column);
+            gap: 5px;
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 15px;
+                font-weight: 300;
+            }
+            max-width: calc(100% - 40px);
         }
         .menu-text * {
             overflow: hidden;
@@ -44,9 +57,8 @@ $menu-card-delay: 0.8s;
         }
 
         .menu-price {
-            // position: absolute;
             align-self: flex-end;
-            left: 100%;
+            margin-right: 10px;
             font-size: 15px;
             font-weight: 700;
             color: $text-color;
@@ -59,58 +71,48 @@ $menu-card-delay: 0.8s;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 0;
+        flex: 0 0 auto;
+        min-width: 60px;
         border-radius: 0 15px 15px 0;
         margin-left: 5px;
         background-color: $new-bg;
         z-index: 3;
-        transition: width 0.5s ease;
+        transform: translateX(100%); // Commence à droite, hors de la vue.
+        transition: transform 0.5s ease;
         i {
             color: #fff;
-            opacity: 0;
+            opacity: 0; // Commence invisible.
             transition: opacity 0.2s ease;
         }
     }
-    &:active {
+
+    &:hover {
         cursor: pointer;
+        .menu-content {
+            flex-shrink: 1;
+        }
         .check {
-            width: 60px;
+            transform: translateX(0); // Glisse en position.
             i {
-                opacity: 1;
+                opacity: 1; // Rend visible.
+            }
+        }
+
+        .menu-price {
+            position: absolute;
+            margin-right: 0; 
+            left: 88%; 
+            @include global-desktop {
+                left: 95%;
             }
         }
 
         .menu-text {
-            width: calc(100% - 100px);
+            max-width: calc(100% - 120px);
         }
-    }
-    @include global-desktop {
-        &:hover {
-            cursor: pointer;
-            .check {
-                width: 60px;
-                i {
-                    opacity: 1;
-                }
-            }
 
-            .menu-text {
-                width: calc(100% - 100px);
-            }
+        .menu-content {
+            padding-right: 0;
         }
-    }
-}
-//nesting
-.menu-text {
-    @include flex(column);
-    gap: 5px;
-    flex: 1;
-    h4 {
-        font-size: 18px;
-        font-weight: 500;
-    }
-    p {
-        font-size: 15px;
-        font-weight: 300;
     }
 }
