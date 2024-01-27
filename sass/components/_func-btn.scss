@@ -5,7 +5,7 @@
     text-align: left;
     background: $bg-color;
     border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); //mettre en variable
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     color: $text-color;
     padding: 30px 15px;
     position: relative;
@@ -29,7 +29,7 @@
         font-weight: 500;
     }
     i {
-        color: #7E7E7E; //mettre variable
+        color: #7E7E7E;
         width: 15px;
         height: 20px;
     }
