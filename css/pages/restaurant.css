@@ -130,7 +130,7 @@ footer a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 .hearts:hover {
   cursor: pointer;
@@ -192,7 +192,7 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 50px);
 }
 .menu-card .menu-content .menu-text h4 {
   font-size: 18px;
@@ -322,6 +322,9 @@ main {
   .restaurant-title {
     justify-content: center;
     margin-top: 50px;
+  }
+  .restaurant-title h1 {
+    font-size: 28px;
   }
 }
 .restaurant-title i {

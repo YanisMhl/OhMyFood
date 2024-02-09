@@ -62,6 +62,9 @@ main {
     @include global-desktop {
         justify-content: center;
         margin-top: 50px;
+        h1 {
+            font-size: 28px;
+        }
     }
 
     i {
