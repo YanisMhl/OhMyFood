@@ -28,6 +28,12 @@ header {
 header .title {
   font-size: 30px;
   font-weight: 400;
+  padding: 5px;
+}
+@media screen and (min-width: 1024px) {
+  header .title {
+    padding: 20px;
+  }
 }
 header a {
   position: absolute;

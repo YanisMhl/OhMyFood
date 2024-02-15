@@ -6,6 +6,10 @@ header {
     .title {
         font-size: 30px;
         font-weight: 400;
+        padding: 5px;
+        @include global-desktop {
+            padding: 20px;
+        }
     }
     a {
         position: absolute;
