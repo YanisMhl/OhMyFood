@@ -151,7 +151,7 @@ body {
 
 .fonctionnement {
     @include flex(column);
-    gap: 30px;
+    gap: 20px;
     padding: 20px 20px 50px 20px;
     @include global-desktop {
         padding: 50px 180px;
@@ -185,11 +185,12 @@ body {
             grid-column: span 2;
         }
         .restaurant {
-            height: 350px;
-            width: 650px;
+            height: 100%;
+            width: 100%;
         }
         a {
-            width: fit-content;
+            max-height: 350px;
+            max-width: 650px;
         }
     }
 }

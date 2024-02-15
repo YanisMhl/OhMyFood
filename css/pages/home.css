@@ -376,7 +376,7 @@ body .main-container {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding: 20px 20px 50px 20px;
 }
 @media screen and (min-width: 1024px) {
@@ -416,11 +416,12 @@ body .main-container {
     grid-column: span 2;
   }
   .restaurants .restaurant {
-    height: 350px;
-    width: 650px;
+    height: 100%;
+    width: 100%;
   }
   .restaurants a {
-    width: fit-content;
+    max-height: 350px;
+    max-width: 650px;
   }
 }
 
