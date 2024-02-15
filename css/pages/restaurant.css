@@ -135,15 +135,11 @@ footer a {
 .hearts:hover {
   cursor: pointer;
 }
-.hearts:hover .fa-regular {
-  opacity: 0;
-}
 .hearts:hover .fa-solid {
   opacity: 1;
-  line-height: normal;
 }
 .hearts .fa-lg {
-  line-height: 0;
+  line-height: normal;
 }
 
 @keyframes sliding {

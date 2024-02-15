@@ -16,16 +16,12 @@
     }
     &:hover {
         cursor: pointer;
-        .fa-regular {
-            opacity: 0;
-        }
         .fa-solid {
             opacity: 1;
-            line-height: normal;
         }
     }
 
     .fa-lg {
-        line-height: 0;
+        line-height: normal;
     }
 }
