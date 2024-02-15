@@ -190,7 +190,7 @@ footer a {
   position: relative;
   display: flex;
   flex: 1 0 auto;
-  transition: flex 0.5s ease;
+  transition: flex 1s ease;
   width: 100%;
   justify-content: space-between;
 }
@@ -216,6 +216,7 @@ footer a {
 .menu-card .menu-content .menu-price {
   align-self: flex-end;
   margin-right: 10px;
+  transition: margin 1s ease;
   font-size: 15px;
   font-weight: 700;
   color: #353535;
@@ -261,7 +262,7 @@ footer a {
   }
 }
 .menu-card:hover .menu-text {
-  max-width: calc(100% - 120px);
+  max-width: calc(100% - 50px);
 }
 .menu-card:hover .menu-content {
   padding-right: 0;
