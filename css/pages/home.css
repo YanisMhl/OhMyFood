@@ -114,9 +114,8 @@ footer a {
   font-weight: 500;
 }
 .step i {
+  margin-left: 20px;
   color: #7E7E7E;
-  width: 15px;
-  height: 20px;
 }
 
 .hearts {
